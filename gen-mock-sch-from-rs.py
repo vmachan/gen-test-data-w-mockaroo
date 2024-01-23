@@ -16,7 +16,7 @@ out_quote_char='"'
 out_line_ending='unix'
 out_file_loc=r'./'
 
-mockaroo_api_key = 'ac117190'
+mockaroo_api_key = os.getenv('MOCKAROO_API_KEY')
 mockaroo_datasets_url = "https://api.mockaroo.com/api/datasets/"
 mockaroo_client = Client(api_key=mockaroo_api_key)
 
